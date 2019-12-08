@@ -1,3 +1,475 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
 
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	padding:0;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+ *{
+	box-sizing:border-box;
+	margin:0;
+  	padding:0;
+	max-width:100%;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+ h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+
+ nav{
+	position: fixed;
+	width: 80%;
+	margin: 0px auto;
+	white-space: nowrap;
+	border: 1px solid dodgerblue;
+    background-color: forestgreen;
+	
+ }
+
+a{
+	display: inline-block;
+	width: 10%;
+	margin: 0.7%;
+	font-size: 15px;
+	text-align: center;
+	text-decoration: none;
+	color: darkgray;
+	
+}
+ a:hover {
+	color: rgb(153, 51, 51);
+ }
+ hr {
+	display: block;
+	height: 1px;
+	border-top: 1px solid black;
+	margin: 2em 0;
+}
+body { 
+	background: white;
+	margin: 0% 10%;
+}
+
+ .left{
+	width: 48%;
+	margin: 0% auto;
+	padding: 0 0 0 0;
+	display: inline-block;
+	font-size: 40px;
+	text-align: center;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.button {
+	display: inline-block;
+	text-align: center;
+	padding: 1% 3%;
+	border: 1px black solid;
+	background-color: rgb(9, 182, 9);
+	font-size: 24px;
+	color: white;
+}
+
+.button:hover{
+	background-color: rgb(153, 51, 56);
+	cursor: pointer;
+}
+
+.right{
+	width: 48%;
+	margin: 0 auto;
+	padding: 5% 10%;
+	display: inline-block;
+}
+
+h2 {
+	font-size: 26px;
+	font-weight: bold;
+	display: inline-block;
+	font-style: italic;
+}
+
+.box1{
+	display: inline-block;
+	width: 48%;
+	margin: 0.5%;
+	font-size: 20px;
+}
+
+.middle-img {
+	background: url(img/mid-page-accent.jpg);
+	display: inline-block;
+	width: 100%;
+	margin: 4% 0 4% 0;
+	
+}
+
+.box2 {
+	display: inline-block;
+	width: 32%;
+	margin: 0.44%;
+	font-size: 20px;
+}
+
+footer {
+	text-align: center;
+}
+
+/*  Services Page HERE */
+
+
+*{
+	box-sizing:border-box;
+	padding:0;
+	margin: 0;
+	max-width: 100%;
+}
+.services_header {
+	width: 100%;
+}
+ h1, h3 {
+	font-size: 26px;
+	font-weight: bold;
+	display: inline-block;
+	font-style: italic;
+ }
+
+.services-header-img {
+	background: url(img/.services-header-img.jpg);
+	display: inline-block;
+	width: 100%;
+	margin: 4% 0 4% 0;
+}
+
+.intro {
+	margin: 0 0 1em 0;
+}
+
+.hr1 {
+	display: block;
+	height: 1px;
+	border-top: 2px solid black;
+	margin: 0 auto;
+}
+.service_grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 100%;
+
+}
+.gridbox{
+	/* display: flex; */
+	border: 1px solid black;
+	background-color: rgb(9, 182, 9);
+	flex-wrap: wrap;
+	max-width: 40%;
+	margin: 4% 5%;
+	padding: 2%;
+}
+
+.gridbox p {
+	margin: 4% 0;
+}
+
+.learnmore {
+	line-height: 1.5em;
+	width: 40%;
+	margin: 0 0;
+}
+
+.learnmore:hover{
+ background-color: rgb(153, 51, 56);
+}
+
+.facts{
+	display: flex;
+	padding: 5%;
+}
+
+.facts img {
+	width: 40%;
+	margin:0 0 0 5%;
+}
+
+.facts ul {
+	padding-left: 5%;
+	list-style-type: square;
+}
+
+
+
+
+/* Media Queries  Here */
+
+/* Here is the code for 500px */
+
+@media (max-width: 500px) {
+.container {
+ justify-content: space-around;
+ flex-flow: column-reverse wrap;
+ margin: 3 0 3 0;
+ }
+
+.container {
+height: 500px;
+}
+
+.logo{
+width: 30%;
+align-items: center;
+}
+
+nav{
+position: relative;
+border: 1px solid white;
+background-color:white;
+text-align: center;
+height: 30px;
+}
+
+ nav a { 
+ font-size: 20px;
+ padding: 10px 0 10px 0;
+ border-top: 1px solid grey; 
+}
+
+ .container a {
+ font-size: 0.8rem;
+ margin: 1rem;
+ margin: 0 auto;
+	
+}
+ .top1 {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+ .box1 {
+ width: 95%;
+ margin: 40px 10px;
+}
+.box1 p {
+font-size: 15px;
+}
+
+.top2 {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.box2 {
+width: 95%;
+margin: 40px 10px;
+}
+.box2 p{
+font-size: 15px;
+}
+
+.right {
+ display:none;
+}
+.left{
+ width: 60%;
+ margin: 0 auto;
+
+ }
+ footer {
+	margin: 2% 0;
+}
+
+/* Here For ServicesPage 500px */
+
+.intro{
+	margin:20px 20px;
+	padding-bottom:30px;
+	line-height: 30px;
+}
+
+.intro p {
+font-size:25px;
+}
+
+.gridbox {
+	width: 96%;
+	height: 300px;
+	padding: 20px;
+	line-height: 22px;
+	margin: 0 20px 40px 20px;
+	border: 1px solid black;
+	background: #F2F1F1;
+}
+
+.gridbox p {
+	font-size:25px;
+	line-height:30px;
+}
+
+.learnmore{
+	font-size: 35px;
+	padding: 15px 45px;
+	border-radius: 5px;
+	margin-left:500px;
+	border: 1px solid black;
+}
+
+.facts {
+	margin: 40px 0 90px 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.factContent {
+	width: 45%;
+	line-height: 20px;
+}
+
+.facts ul{
+	margin: 20px 0 0 20px;
+	line-height: 30px;
+}
+
+}
+
+
+/* Here is the code for 800px */
+
+@media (max-width: 800px) {
+ p {
+font-size: 15px;
+}
+
+.logo{
+ width: 30%;
+ align-items: center;
+ margin: 0 auto;
+
+}
+nav{
+ position: relative;
+ border: 1px solid white;
+ background-color:white;
+ text-align: center;
+ display: flex;
+ justify-content: space-between;
+ height: 50px;
+
+}
+
+nav a{ 
+font-size: 30px;
+padding: 20px 0 20px 0;
+}
+.container a {
+font-size: 0.8rem;
+margin: 1rem;
+margin: 0 auto;
+}
+
+.banner {
+justify-content:center;
+margin: 20px 0 20px 0;
+}
+.right {
+display:none;
+}
+.left {
+width: 100%;
+margin: 0 auto;	 
+
+}
+footer{
+margin: 2% 0;
+}
+ /* Here Starts Service Page 800px */
+
+.intro {
+	margin:20px 10px;
+	padding-bottom:30px;
+	line-height: 22px;
+}
+
+.gridbox {
+	width: 45%;
+	height: 300px;
+	padding: 20px;
+	line-height: 22px;
+	margin: 0 20px 40px 20px;
+	border: 1px solid black;
+	background: #F2F1F1;
+}
+
+.learnmore {
+	font-size: 18px;
+	padding: 10px 45px;
+	border-radius: 5px;
+	border: 1px solid black;
+}
+
+.facts {
+ margin: 40px 20px;
+}
+
+.factContent {
+line-height: 22px;
+}
+
+li  {
+font-size:20px;
+}
+
+}
+	

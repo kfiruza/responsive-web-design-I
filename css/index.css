@@ -172,7 +172,7 @@ footer {
 
 
 *{
-	box-sizing:border-box;
+	box-sizing: border-box;
 	padding:0;
 	margin: 0;
 	max-width: 100%;
@@ -303,7 +303,7 @@ height: 30px;
  margin: 40px 10px;
 }
 .box1 p {
-font-size: 15px;
+font-size: 18px;
 }
 
 .top2 {
@@ -311,14 +311,14 @@ display: flex;
 flex-direction: column;
 align-items: center;
 }
+
 .box2 {
 width: 95%;
 margin: 40px 10px;
 }
-.box2 p{
-font-size: 15px;
+ .box2 p {
+ font-size: 18px;
 }
-
 .right {
  display:none;
 }
@@ -330,18 +330,26 @@ font-size: 15px;
  footer {
 	margin: 2% 0;
 }
+}
 
 /* Here For ServicesPage 500px */
 
-.intro{
-	margin:20px 20px;
-	padding-bottom:30px;
+@media (max-width: 500px) {
+ .intro{
+	margin: 20px 20px;
+	padding-bottom: 30px;
 	line-height: 30px;
 }
 
 .intro p {
-font-size:25px;
+font-size: 25px;
 }
+h1{
+	font-size: 20px;
+	font-weight: bold;
+	display: inline-block;
+	font-style: italic;
+	}
 
 .gridbox {
 	width: 96%;
@@ -353,18 +361,21 @@ font-size:25px;
 	background: #F2F1F1;
 }
 
-.gridbox p {
-	font-size:25px;
-	line-height:30px;
-}
 
+.gridbox p {
+font-size: 18px;
+line-height: 15px;
+}
+.box2 p {
+font-size: 15px;
+}
 .learnmore{
-	font-size: 35px;
-	padding: 15px 45px;
+	font-size: 10px;
+	padding: 5px 5px;
 	border-radius: 5px;
-	margin-left:500px;
 	border: 1px solid black;
 }
+
 
 .facts {
 	margin: 40px 0 90px 0;
@@ -446,17 +457,31 @@ margin: 2% 0;
 	width: 45%;
 	height: 300px;
 	padding: 20px;
-	line-height: 22px;
+	line-height: 15px;
 	margin: 0 20px 40px 20px;
 	border: 1px solid black;
 	background: #F2F1F1;
+ }
+.gridbox p {
+	margin: 5% 0;
 }
 
 .learnmore {
-	font-size: 18px;
-	padding: 10px 45px;
+	font-size: 10px;
+	padding: 10px 5px;
 	border-radius: 5px;
+	line-height: 0.5px;
 	border: 1px solid black;
+}
+ p{
+	font-size: 18px;
+	}
+
+h1, h3 {
+	font-size: 20px;
+	font-weight: bold;
+	display: inline-block;
+	font-style: italic;
 }
 
 .facts {
@@ -468,7 +493,7 @@ line-height: 22px;
 }
 
 li  {
-font-size:20px;
+font-size: 20px;
 }
 
 }

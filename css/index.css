@@ -62,7 +62,7 @@ html, body {
  h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
-    margin-bottom: 15px;
+    margin-bottom: 18px;
 }
 
 /* Your code starts here! */
@@ -282,9 +282,12 @@ height: 30px;
 }
 
  nav a { 
- font-size: 20px;
- padding: 10px 0 10px 0;
- border-top: 1px solid grey; 
+ border-bottom: 1px solid grey; 
+ width: 100%;
+ text-align: center;
+ padding-top: 4%;
+ padding-bottom: 4%;
+ 
 }
 
  .container a {
@@ -363,8 +366,8 @@ h1{
 
 
 .gridbox p {
-font-size: 18px;
-line-height: 15px;
+font-size: 10px;
+line-height: 13px;
 }
 .box2 p {
 font-size: 15px;
